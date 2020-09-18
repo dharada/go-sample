@@ -19,7 +19,7 @@ func main() {
 
 		cfg := elasticsearch.Config{
 			CloudID: "v7-experience:ZXVyb3BlLXdlc3QxLmdjcC5jbG91ZC5lcy5pbyQ5ZjIyODNkOGY2ODg0ZWMyOTdlM2E2YzliN2Y5NzUzMCQ4NDdjZjVjZDg2MTA0Y2IyODBjMDAzNTM4M2YxOTc3MA==",
-			APIKey:  "bUpzd24zUUJlcnE0NEQ0VEhHWHM6YjMyYXpGajRTV0c0SThWc2dDeThIQQ==",
+			APIKey:  "YjA1S24zUUIyc2VHa0phcW54QnA6bzJUMWtiV3BRcDI4bC03empNRHN5dw==",
 		}
 
 		es, err := elasticsearch.NewClient(cfg)
