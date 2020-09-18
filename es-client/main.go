@@ -17,8 +17,15 @@ func main() {
 
 	if onCloud {
 
+		//var Header = http.Header(map[string][]string{
+		//	"Authorization": {"Bearer xxxxxxxxxxxxxxxx..."},
+		//})
+
+
+
 		cfg := elasticsearch.Config{
 			CloudID: "v7-experience:ZXVyb3BlLXdlc3QxLmdjcC5jbG91ZC5lcy5pbyQ5ZjIyODNkOGY2ODg0ZWMyOTdlM2E2YzliN2Y5NzUzMCQ4NDdjZjVjZDg2MTA0Y2IyODBjMDAzNTM4M2YxOTc3MA==",
+			// please note this APIKey is not admin APIKey. ES APIKey. see - https://www.elastic.co/guide/en/elasticsearch/reference/current/security-api-create-api-key.html#security-api-create-api-key
 			APIKey:  "YjA1S24zUUIyc2VHa0phcW54QnA6bzJUMWtiV3BRcDI4bC03empNRHN5dw==",
 		}
 
@@ -29,6 +36,10 @@ func main() {
 			log.Fatalf("Error getting response: %s", err)
 		}
 		log.Println(res)
+
+
+
+
 
 	} else {
 
